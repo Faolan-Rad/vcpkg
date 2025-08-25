@@ -407,6 +407,12 @@ else()
     set(OPTIONS "${OPTIONS} --disable-opengl")
 endif()
 
+if("vulkan" IN_LIST FEATURES)
+    set(OPTIONS "${OPTIONS} --enable-vulkan")
+else()
+    set(OPTIONS "${OPTIONS} --disable-vulkan")
+endif()
+
 if("openh264" IN_LIST FEATURES)
     set(OPTIONS "${OPTIONS} --enable-libopenh264")
     set(WITH_OPENH264 ON)
