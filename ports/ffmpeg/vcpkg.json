@@ -512,13 +512,6 @@
         "opengl-registry"
       ]
     },
-    "vulkan": {
-      "description": "Vulkan rendering",
-      "supports": "!uwp",
-      "dependencies": [
-        "vulkan"
-      ]
-    },
     "openh264": {
       "description": "H.264 de/encoding via openh264",
       "dependencies": [
